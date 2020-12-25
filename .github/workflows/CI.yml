@@ -1,34 +1,35 @@
 name: CI
 
-on: 
+on:
+  workflow_dispatch:
   schedule:
-    - cron: '11 1 * * *'
+    - cron: "11 1 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-      with:
-        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - name: Create local changes
-      run: |
-        git clone --depth=1 https://github.com/pojiezhiyuanjun/freev2.git
-        cd ./freev2
-        git log -1 --name-only > ./one
-        grep -i txt one > two
-        grep -i yml one > two
-        var=$(cat two)
-        cp ${var} ../666.txt
-        cd ../
-        rm -rf ./freev2
-    - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .
-        git commit -m "Add changes" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@master
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+      - name: Create local changes
+        run: |
+          git clone --depth=1 https://github.com/pojiezhiyuanjun/freev2.git
+          cd ./freev2
+          git log -1 --name-only > ./one
+          grep -i txt one > two
+          grep -i yml one > two
+          var=$(cat two)
+          cp ${var} ../666.txt
+          cd ../
+          rm -rf ./freev2
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
