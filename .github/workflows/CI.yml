@@ -19,7 +19,8 @@ jobs:
           git log -1 --name-only > ./one
           grep -i yml one > two
           var=$(cat two)
-          mv ${var} ../666.txt
+          mv ${var} 666.txt
+          mv 666.txt ../
           cd ../
           rm -rf ./freev2
       - name: Commit files
