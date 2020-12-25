@@ -19,6 +19,7 @@ jobs:
           git log -1 --name-only > ./one
           grep -i yml one > two
           var=$(cat two)
+          echo ${var}
           mv ${var} 666.txt
           mv 666.txt ../
           cd ../
