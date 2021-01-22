@@ -5,74 +5,74 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name:     1, server: c-jp1.ooxc.cc, port: 443, type: vmess, uuid: f299184b-19e0-41a4-9b4b-65fa8f0e691c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-jp1.ooxc.cc}}
-  - {name:     2, server: 95.179.160.215, port: 153, type: vmess, uuid: 064c130d-292f-3a1e-acf0-0ffc2303380b, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:     3, server: 122.192.189.41, port: 15011, type: vmess, uuid: 7c6f2348-0ebd-3a1f-a8a0-c3b5629c2e0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 158.247.216.127}}
-  - {name:     4, server: ae6c5b91654bc069b.awsglobalaccelerator.com, port: 153, type: vmess, uuid: 6865b151-88a7-38bb-abdb-61767233f323, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:     5, server: 185.237.99.105, port: 153, type: vmess, uuid: 6a29b9a0-46b1-3469-8c7a-a1adc8f2f07f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:     6, server: 154.84.1.192, port: 443, type: vmess, uuid: 436f1897-6228-45aa-8e2e-8fe031827887, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.13612617.xyz}}
-  - {name:     7, server: 172.67.186.204, port: 443, type: vmess, uuid: f299184b-19e0-41a4-9b4b-65fa8f0e691c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-jp1.ooxc.cc}}
-  - {name:     8, server: 154.84.1.224, port: 443, type: vmess, uuid: c7aba2b6-2f7c-4b44-99e3-b083c7a105a7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.44985428.xyz}}
-  - {name:     9, server: 154.84.1.74, port: 443, type: vmess, uuid: 54704b97-b7ac-44ba-bf5d-1b35edfa3300, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.20800980.xyz}}
-  - {name:   10, server: 47.112.23.90, port: 153, type: vmess, uuid: 6df93022-abb8-3407-a05b-275e0576bc59, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   11, server: 14.17.96.35, port: 153, type: vmess, uuid: 46003cff-b9eb-3351-a99c-a54445c65a28, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   12, server: llajv.rebldp.tech, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: llajv.rebldp.tech}}
-  - {name:   13, server: 104.24.102.20, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xey.wrxjys.tech}}
-  - {name:   14, server: 45.77.229.144, port: 153, type: vmess, uuid: ed3c084f-b807-3391-be39-1774db5072ae, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   15, server: 154.84.1.71, port: 443, type: vmess, uuid: 9fe8881c-d03b-4ae8-b4c5-8a48a53ff6c6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.06339405.xyz}}
-  - {name:   16, server: 154.84.1.63, port: 443, type: vmess, uuid: 48f9684b-5d1b-4722-afa7-e1e4f25eb3b3, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.80323287.xyz}}
-  - {name:   17, server: 154.84.1.235, port: 443, type: vmess, uuid: d15111f5-ad92-4175-a238-7266cf665786, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.9142674173.xyz}}
-  - {name:   18, server: a5a0379b0bd9c1262.awsglobalaccelerator.com, port: 153, type: vmess, uuid: 8adbd7f6-d177-38c3-bfd3-76c05270cc40, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   19, server: 154.84.1.161, port: 443, type: vmess, uuid: 8447e618-032e-4981-943d-d3082049656d, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.32429678.xyz}}
-  - {name:   20, server: a86c5a8f3e3f3caf9.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: 8a3ceeb3-c7de-4a6c-88c0-6fda702f602c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: a86c5a8f3e3f3caf9.awsglobalaccelerator.com}}
-  - {name:   21, server: a29aa7ba467f6efab.awsglobalaccelerator.com, port: 153, type: vmess, uuid: d49562d0-b5ca-383a-b8f1-d031194ec1b0, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   22, server: 172.67.150.22, port: 443, type: vmess, uuid: 37e3274e-1fc8-4879-ac24-0fa256952a5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xjj.ddns1312.top}}
-  - {name:   23, server: 103.219.154.170, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 103.219.154.170}}
-  - {name:   24, server: a87b2a3804f5e6234.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: 8a3ceeb3-c7de-4a6c-88c0-6fda702f602c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: a87b2a3804f5e6234.awsglobalaccelerator.com}}
-  - {name:   25, server: 154.84.1.65, port: 443, type: vmess, uuid: 14505ea6-2314-4a0b-8859-8562bb82a176, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.56726769.xyz}}
-  - {name:   26, server: aea4e933cdb6310fe.awsglobalaccelerator.com, port: 8080, type: vmess, uuid: 8a3ceeb3-c7de-4a6c-88c0-6fda702f602c, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: aea4e933cdb6310fe.awsglobalaccelerator.com}}
-  - {name:   27, server: 154.84.1.222, port: 443, type: vmess, uuid: 2a5e1b0f-ed6a-408e-a7cc-8a0ecba580d6, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.46352799.xyz}}
-  - {name:   28, server: azurehk1.0tk8a3a1q4t94dler.com, port: 153, type: vmess, uuid: 86bbdfd0-8de7-3a34-b8bb-4526863fe398, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   29, server: a28034451ac2a38b7.awsglobalaccelerator.com, port: 153, type: vmess, uuid: f69a76c2-29f4-36e9-8cf8-999c5378f054, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   30, server: azurehk2.0tk8a3a1q4t94dler.com, port: 153, type: vmess, uuid: 9f84c3f0-b97c-3d1c-966f-3811efd5a0e4, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   31, server: 180.235.234.68, port: 153, type: vmess, uuid: 69a0704a-0f1d-34ee-978c-060fafaf4109, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   32, server: 104.19.45.117, port: 443, type: vmess, uuid: 3a1f7ce3-54c5-13c4-9a4e-585b8482d23b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /gqiqvws, ws-headers: {Host: trump-fuck-gfw.trump2021.tk}}
-  - {name:   33, server: wtt1.qiangdong.xyz, port: 153, type: vmess, uuid: 18b7f5ee-39f6-3e7d-8804-46c8f6cda8e1, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   34, server: 103.72.5.27, port: 153, type: vmess, uuid: abc758fa-7207-36ee-b726-1e938bd87a42, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   35, server: 52.229.174.51, port: 8080, type: vmess, uuid: 8b5e117c-ed51-11e8-b474-000d3a80e7cc, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}}
-  - {name:   36, server: 150.66.28.175, port: 153, type: vmess, uuid: 5bac8d7a-1c5c-3820-95de-b236329e10e2, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   37, server: a5fae22063e7ec424.awsglobalaccelerator.com, port: 153, type: vmess, uuid: 183afe24-06cb-310d-8023-37bbf50579e7, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   38, server: a2641231464110886.awsglobalaccelerator.com, port: 153, type: vmess, uuid: df7869ac-670f-3560-8c6f-5c3d53d648e1, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   39, server: 154.84.1.79, port: 443, type: vmess, uuid: e33eabe3-1dbd-449d-90a2-636c0f8b6f9a, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.28596077.xyz}}
-  - {name:   40, server: a2b78c0a819f9eefb.awsglobalaccelerator.com, port: 153, type: vmess, uuid: d7fddcdb-1fe9-3cc6-a816-9bc9268ebd7b, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   41, server: 158.247.203.234, port: 153, type: vmess, uuid: 41de8ecc-04aa-32f6-8751-faccf567cb9c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   42, server: ae9a9fb52ec507426.awsglobalaccelerator.com, port: 153, type: vmess, uuid: 4e7d1c4e-d670-3d13-8fe8-e46aa1406777, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   43, server: 45.139.179.132, port: 26858, type: vmess, uuid: fe09c001-1456-40fd-bec9-e4eaf4812cf8, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.139.179.132}}
-  - {name:   44, server: 141.164.53.200, port: 153, type: vmess, uuid: c5840b5f-a939-3339-9bc1-9713c92d3eb1, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   45, server: a6d4d8671aea72d3a.awsglobalaccelerator.com, port: 153, type: vmess, uuid: d846361e-fb7e-3760-b7ff-58c2807f7b8c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   46, server: 211.43.15.85, port: 153, type: vmess, uuid: daf261c8-0a9a-3fe2-8229-f96644a93745, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   47, server: 211.43.15.86, port: 153, type: vmess, uuid: 6da5e16c-b408-37b8-83a7-c400cc9be7e0, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   48, server: 45.32.252.142, port: 153, type: vmess, uuid: 24acc41e-0238-3bf7-ad0d-aa26f0f75998, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   49, server: j11.yt001.xyz, port: 15010, type: vmess, uuid: 7c6f2348-0ebd-3a1f-a8a0-c3b5629c2e0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 107.191.53.211}}
-  - {name:   50, server: 104.19.89.42, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: shrill-union-efb2.3059202551.workers.dev}}
-  - {name:   51, server: 45.8.158.211, port: 46309, type: vmess, uuid: f6375efa-1795-4385-992a-fcd42f3cfacd, alterId: 0, cipher: auto, tls: false}
-  - {name:   52, server: azurekr1.0tk8a3a1q4t94dler.com, port: 153, type: vmess, uuid: 17e0b205-ba8c-32e4-aec7-34e175775444, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   53, server: pccw1.qiangdong.xyz, port: 153, type: vmess, uuid: ea90c104-4d4c-325e-a41d-18b57e046cbe, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   54, server: j10.yt001.xyz, port: 15008, type: vmess, uuid: 7c6f2348-0ebd-3a1f-a8a0-c3b5629c2e0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 167.179.80.15}}
-  - {name:   55, server: chinahr.cf, port: 443, type: vmess, uuid: 6542e022-5941-11eb-a736-5600032748fd, alterId: 12, cipher: auto, tls: true, network: ws, ws-path: /UaupJ9Xn/, ws-headers: {Host: chinahr.cf}}
-  - {name:   56, server: 154.17.14.2, port: 153, type: vmess, uuid: 8602af75-b129-3a1f-9ea6-292d35c10f74, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   57, server: mcjs29cks32.i2eu938kp74a7.xyz, port: 443, type: vmess, uuid: e7b53be7-0975-47c0-bd6a-83eaf424bcb3, alterId: 444, cipher: auto, tls: true, network: ws, ws-path: /fc1496039d/, ws-headers: {Host: mcjs29cks32.i2eu938kp74a7.xyz}}
-  - {name:   58, server: pccw2.qiangdong.xyz, port: 153, type: vmess, uuid: 207dbbe3-4ec5-392c-8135-78f9466144e5, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   59, server: seed1.qiangdong.xyz, port: 153, type: vmess, uuid: 9f3529f1-8792-37f8-8c1c-70a7287c9331, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   60, server: seed1.qiangdong.xyz, port: 153, type: vmess, uuid: 9f3529f1-8792-37f8-8c1c-70a7287c9331, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   61, server: 172.67.199.187, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: llajv.rebldp.tech}}
-  - {name:   62, server: 61.221.155.7, port: 153, type: vmess, uuid: 09e2b227-e05c-3bc9-9ad6-89f17405ad57, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   63, server: 154.17.0.20, port: 153, type: vmess, uuid: d8eebf4a-072e-3e83-91b8-537ae2a69b7c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   64, server: 61.221.155.8, port: 153, type: vmess, uuid: 2c84d7bc-a1fc-37dd-b9db-fcd0b4709dc8, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   65, server: 61.221.155.9, port: 153, type: vmess, uuid: 80ef6c0f-fa4c-3618-b23a-e45775bfbde8, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   66, server: pccw4.qiangdong.xyz, port: 153, type: vmess, uuid: a7674bbc-4725-3333-bd53-297326397bfb, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   67, server: 193.53.126.138, port: 153, type: vmess, uuid: 9227655e-f9df-397d-8002-2c2218a3ec5c, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
-  - {name:   68, server: 154.17.14.6, port: 153, type: vmess, uuid: 83a86cd9-9673-3628-bfdb-f63536c4883a, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: da46486157.laowanxiang.com}}
+  - {name:   1, server: 89.163.212.34, port: 443, type: vmess, uuid: e5a59c58-d055-428e-b191-95fb5dcb7539, alterId: 16, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: good.free9999.net}}
+  - {name:   2, server: mcjs29cks32.i2eu938kp74a7.xyz, port: 443, type: vmess, uuid: e7b53be7-0975-47c0-bd6a-83eaf424bcb3, alterId: 444, cipher: auto, tls: true, network: ws, ws-path: /fc1496039d/, ws-headers: {Host: mcjs29cks32.i2eu938kp74a7.xyz}}
+  - {name:   3, server: 188.34.140.79, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 188.34.140.79}}
+  - {name:   4, server: 45.139.179.132, port: 26858, type: vmess, uuid: fe09c001-1456-40fd-bec9-e4eaf4812cf8, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 45.139.179.132}}
+  - {name:   5, server: 45.8.158.211, port: 35465, type: vmess, uuid: f6375efa-1795-4385-992a-fcd42f3cfacd, alterId: 0, cipher: auto, tls: false}
+  - {name:   6, server: 45.130.147.69, port: 443, type: vmess, uuid: 9a198e1e-b67a-42a7-86a2-7d91d037bc5e, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /bda87216fa0a/, ws-headers: {Host: r.199301.xyz}}
+  - {name:   7, server: 368.v2raya.xyz, port: 80, type: vmess, uuid: 11cd5bf9-5611-3b95-a301-f32f982e01fa, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 368.v2raya.xyz}}
+  - {name:   8, server: 367.v2raya.xyz, port: 80, type: vmess, uuid: 11cd5bf9-5611-3b95-a301-f32f982e01fa, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 367.v2raya.xyz}}
+  - {name:   9, server: 362.v2raya.xyz, port: 80, type: vmess, uuid: 11cd5bf9-5611-3b95-a301-f32f982e01fa, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 362.v2raya.xyz}}
+  - {name: 10, server: 103.219.154.170, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 103.219.154.170}}
+  - {name: 11, server: 103.219.154.170, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 103.219.154.170}}
+  - {name: 12, server: 141.101.115.56, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 13, server: 104.19.3.12, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 14, server: 172.67.199.187, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: llajv.rebldp.tech}}
+  - {name: 15, server: c-ru2.ooxc.cc, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-ru2.ooxc.cc}}
+  - {name: 16, server: sibyl-system.xyz, port: 20000, type: vmess, uuid: 0724b9cd-aaec-401a-b030-8a244baab5d5, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: sibyl-system.xyz}}
+  - {name: 17, server: aga-jp.ide.wtf, port: 11011, type: vmess, uuid: cccf242d-5da6-41ac-9ea3-9f78e7bb8c58, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /downloads/wechat.setup.exe, ws-headers: {Host: aga-jp.ide.wtf}}
+  - {name: 18, server: 27.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: e58de9bb-4ba6-40d1-a71d-787118f07433, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 27.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 19, server: 21.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: e58de9bb-4ba6-40d1-a71d-787118f07433, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 21.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 20, server: 104.19.3.16, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 21, server: 26.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: e58de9bb-4ba6-40d1-a71d-787118f07433, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 26.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 22, server: 104.19.3.11, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 23, server: 104.19.3.25, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 24, server: 104.19.4.12, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 25, server: 104.24.107.225, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 26, server: 172.67.150.22, port: 443, type: vmess, uuid: 81a4c231-d055-4dbd-a374-0fe5bfe9ed72, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: v2.ddns1312.top}}
+  - {name: 27, server: hk-aga.nayun.xyz, port: 10010, type: vmess, uuid: db8045e6-02a0-4c85-94a8-367af92d6b8f, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /1c770436, ws-headers: {Host: hk02.nayun.xyz}}
+  - {name: 28, server: 104.19.3.98, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 29, server: 104.19.19.58, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 30, server: 104.18.8.157, port: 443, type: vmess, uuid: 3a1f7ce3-54c5-13c4-9a4e-585b8482d23b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /gqiqvws, ws-headers: {Host: trump-fuck-gfw.trump2021.tk}}
+  - {name: 31, server: 155.94.184.179, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 155.94.184.179}}
+  - {name: 32, server: 104.18.7.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
+  - {name: 33, server: 104.19.3.29, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 34, server: 104.24.107.225, port: 443, type: vmess, uuid: dbdf4509-a505-468f-f9ee-8a11a6d1c9db, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /ray/, ws-headers: {Host: chicago.kelake.tk}}
+  - {name: 35, server: 75.2.112.5, port: 11011, type: vmess, uuid: cccf242d-5da6-41ac-9ea3-9f78e7bb8c58, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /downloads/wechat.setup.exe, ws-headers: {Host: aga-jp.ide.wtf}}
+  - {name: 36, server: 104.19.3.60, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 37, server: littlesur.ml, port: 443, type: vmess, uuid: 570f4832-5bd1-11eb-8a70-56000328caa5, alterId: 12, cipher: auto, tls: true, network: ws, ws-path: /KYGfI8ZT/, ws-headers: {Host: littlesur.ml}}
+  - {name: 38, server: 99.83.181.186, port: 11011, type: vmess, uuid: cccf242d-5da6-41ac-9ea3-9f78e7bb8c58, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /downloads/wechat.setup.exe, ws-headers: {Host: aga-jp.ide.wtf}}
+  - {name: 39, server: 104.19.4.20, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 40, server: 104.19.3.15, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 41, server: 104.19.3.14, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 42, server: 104.19.45.185, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 43, server: c-us5.ooxc.cc, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-us5.ooxc.cc}}
+  - {name: 44, server: 104.19.3.31, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
+  - {name: 45, server: 211.95.53.39, port: 443, type: vmess, uuid: b8a66664-6d13-39d9-bd43-e3948e6b3979, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /mugua, ws-headers: {Host: l1-in-01.mucdn.me}}
+  - {name: 46, server: global-cdn-lt-a-01.mugun.xyz, port: 443, type: vmess, uuid: b8a66664-6d13-39d9-bd43-e3948e6b3979, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /mugua, ws-headers: {Host: l1-in-01.mucdn.me}}
+  - {name: 47, server: 104.19.45.117, port: 443, type: vmess, uuid: 3a1f7ce3-54c5-13c4-9a4e-585b8482d23b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /gqiqvws, ws-headers: {Host: trump-fuck-gfw.trump2021.tk}}
+  - {name: 48, server: 104.24.102.20, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: xey.wrxjys.tech}}
+  - {name: 49, server: llajv.rebldp.tech, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: llajv.rebldp.tech}}
+  - {name: 50, server: 172.67.186.204, port: 443, type: vmess, uuid: f299184b-19e0-41a4-9b4b-65fa8f0e691c, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /jj, ws-headers: {Host: c-jp1.ooxc.cc}}
+  - {name: 51, server: 45.32.60.26, port: 59583, type: vmess, uuid: 54e0213c-dfe2-4850-95d6-a7bc0e17517a, alterId: 0, cipher: auto, tls: false}
+  - {name: 52, server: 167.179.85.109, port: 59476, type: vmess, uuid: 954edf0f-9f98-4786-a993-db129ad77aa1, alterId: 0, cipher: auto, tls: false}
+  - {name: 53, server: 19.HKG.ASIA.BIGAIRPORT.NET, port: 80, type: vmess, uuid: e58de9bb-4ba6-40d1-a71d-787118f07433, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 19.HKG.ASIA.BIGAIRPORT.NET}}
+  - {name: 54, server: chinahr.cf, port: 443, type: vmess, uuid: 6542e022-5941-11eb-a736-5600032748fd, alterId: 12, cipher: auto, tls: true, network: ws, ws-path: /UaupJ9Xn/, ws-headers: {Host: chinahr.cf}}
+  - {name: 55, server: hkt-002.liyun.edu.pl, port: 21236, type: vmess, uuid: a3429882-29b5-3e90-b8eb-77445322477d, alterId: 12, cipher: auto, tls: false, network: ws, ws-path: /07hgtds, ws-headers: {Host: hkt-002.liyun.edu.pl}}
+  - {name: 56, server: centos.fuchau.xyz, port: 443, type: vmess, uuid: b707c9e6-3a61-4f0b-8844-9a398cfadfb7, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /add76314/, ws-headers: {Host: centos.fuchau.xyz}}
+  - {name: 57, server: hk2197.azzico.space, port: 11576, type: vmess, uuid: 68413849-95e0-3036-8343-9f9ae50d9804, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: hkpro2197.azzico.pw}}
+  - {name: 58, server: 45.76.191.128, port: 51397, type: vmess, uuid: 76d73c0d-81a6-435f-912d-9e10fdccc448, alterId: 0, cipher: auto, tls: false}
+  - {name:   59, server: 123.215.16.234, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name:   60, server: 45.9.238.47, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name:   61, server: 23.225.125.84, port: 443, type: vmess, uuid: 8fb921c0-564d-4d5a-9b13-384c01820126, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.56626173.xyz}}
+  - {name:   62, server: cscu.akkk.xyz, port: 20123, type: vmess, uuid: 1921a2e1-1338-31ac-9a51-f20903643e4a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: li3.jianghe1.top}}
+  - {name:   63, server: 45.43.14.85, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name:   64, server: 45.43.14.103, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name:   65, server: 103.156.50.115, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name:   66, server: 66.181.45.169, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 66.181.45.169}}
+  - {name:   67, server: 37.120.151.14, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name:   68, server: 45.9.238.47, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name:   69, server: 199.58.187.69, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name:   70, server: 154.16.168.184, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name:   71, server: 195.47.194.42, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
@@ -332,25 +332,6 @@ proxies:
   - {name:   325, server: 172.83.42.7, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
   - {name:   326, server: 172.83.42.136, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
   - {name:   327, server: 23.105.163.80, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name:   328, server: 198.8.85.82, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   329, server: 37.120.196.59, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   330, server: 192.154.253.67, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   331, server: 104.19.19.58, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
-  - {name:   332, server: 217.138.194.246, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name:   333, server: 45.43.19.90, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   334, server: 172.83.42.138, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   335, server: 104.19.2.14, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /y284, ws-headers: {Host: freeus.mcan.tech}}
-  - {name:   336, server: v1-aws-kr-15.tudog.me, port: 1080, type: vmess, uuid: f4d6df8d-bb76-3052-93fd-18fe167020cc, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /tudog, ws-headers: {Host: v1-aws-kr-15.tudog.me}}
-  - {name:   337, server: 193.148.17.133, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name:   338, server: 45.89.173.205, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   339, server: 37.120.147.230, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name:   340, server: 99.83.181.186, port: 11011, type: vmess, uuid: cccf242d-5da6-41ac-9ea3-9f78e7bb8c58, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /downloads/wechat.setup.exe, ws-headers: {Host: aga-jp.ide.wtf}}
-  - {name:   341, server: 154.16.169.3, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   342, server: 172.98.82.229, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name:   343, server: 5.187.49.189, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name:   344, server: 107.172.55.254, port: 52333, type: vmess, uuid: 475e7113-a34c-455a-e2a4-1ec8ec930108, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 107.172.55.254}}
-  - {name:   345, server: 45.43.19.76, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name:   346, server: cscu.xxatf.top, port: 20220, type: vmess, uuid: 1921a2e1-1338-31ac-9a51-f20903643e4a, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 20.akkk.xyz}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -684,25 +665,6 @@ proxy-groups:
       -   325
       -   326
       -   327
-      -   328
-      -   329
-      -   330
-      -   331
-      -   332
-      -   333
-      -   334
-      -   335
-      -   336
-      -   337
-      -   338
-      -   339
-      -   340
-      -   341
-      -   342
-      -   343
-      -   344
-      -   345
-      -   346
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1036,25 +998,6 @@ proxy-groups:
       -   325
       -   326
       -   327
-      -   328
-      -   329
-      -   330
-      -   331
-      -   332
-      -   333
-      -   334
-      -   335
-      -   336
-      -   337
-      -   338
-      -   339
-      -   340
-      -   341
-      -   342
-      -   343
-      -   344
-      -   345
-      -   346
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1388,25 +1331,6 @@ proxy-groups:
       -   325
       -   326
       -   327
-      -   328
-      -   329
-      -   330
-      -   331
-      -   332
-      -   333
-      -   334
-      -   335
-      -   336
-      -   337
-      -   338
-      -   339
-      -   340
-      -   341
-      -   342
-      -   343
-      -   344
-      -   345
-      -   346
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1744,25 +1668,6 @@ proxy-groups:
       -   325
       -   326
       -   327
-      -   328
-      -   329
-      -   330
-      -   331
-      -   332
-      -   333
-      -   334
-      -   335
-      -   336
-      -   337
-      -   338
-      -   339
-      -   340
-      -   341
-      -   342
-      -   343
-      -   344
-      -   345
-      -   346
   - name: 📲 电报信息
     type: select
     proxies:
@@ -2095,25 +2000,6 @@ proxy-groups:
       -   325
       -   326
       -   327
-      -   328
-      -   329
-      -   330
-      -   331
-      -   332
-      -   333
-      -   334
-      -   335
-      -   336
-      -   337
-      -   338
-      -   339
-      -   340
-      -   341
-      -   342
-      -   343
-      -   344
-      -   345
-      -   346
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -2447,25 +2333,6 @@ proxy-groups:
       -   325
       -   326
       -   327
-      -   328
-      -   329
-      -   330
-      -   331
-      -   332
-      -   333
-      -   334
-      -   335
-      -   336
-      -   337
-      -   338
-      -   339
-      -   340
-      -   341
-      -   342
-      -   343
-      -   344
-      -   345
-      -   346
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2808,25 +2675,6 @@ proxy-groups:
       -   325
       -   326
       -   327
-      -   328
-      -   329
-      -   330
-      -   331
-      -   332
-      -   333
-      -   334
-      -   335
-      -   336
-      -   337
-      -   338
-      -   339
-      -   340
-      -   341
-      -   342
-      -   343
-      -   344
-      -   345
-      -   346
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
