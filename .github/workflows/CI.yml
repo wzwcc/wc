@@ -19,9 +19,12 @@ jobs:
           git log -1 --name-only
           git log -1 --name-only > ./one
           grep -i yml one > two
+          v2=$(grep -i txt one)
           var=$(cat two)
           echo ${var}
           mv ${var} 666.txt
+          mv ${v2} v2.txt
+          mv v2.txt ../
           mv 666.txt ../
           cd ../
           rm -rf ./freev2
