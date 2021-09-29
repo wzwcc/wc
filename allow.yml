@@ -1,0 +1,3 @@
+payload:
+  # > allow API
+  - DOMAIN-SUFFIX,f41.top
