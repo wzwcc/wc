@@ -1,3 +1,4 @@
 payload:
   # > allow API
-  - DOMAIN-SUFFIX,f41.top
+ - DOMAIN-SUFFIX,f41.top
+ - DOMAIN-SUFFIX,bunediy.com
