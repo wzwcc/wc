@@ -4,6 +4,9 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
+tun:
+  enable: true
+  stack: system # or gvisor
 proxies:
   - name: socks
     type: socks5
@@ -98,61 +101,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - Pr
-rules:
-  - RULE-SET,nott,REJECT
-  - RULE-SET,allow,DIRECT
-  - RULE-SET,Reject,AdBlock
-  - RULE-SET,Special,DIRECT
-  - RULE-SET,Netflix,Netflix
-  - RULE-SET,Spotify,Spotify
-  - RULE-SET,YouTube,YouTube
-  - RULE-SET,Disney Plus,Disney
-  - RULE-SET,Bilibili,AsianTV
-  - RULE-SET,iQiyi,AsianTV
-  - RULE-SET,Letv,AsianTV
-  - RULE-SET,Netease Music,AsianTV
-  - RULE-SET,Tencent Video,AsianTV
-  - RULE-SET,Youku,AsianTV
-  - RULE-SET,WeTV,AsianTV
-  - RULE-SET,ABC,GlobalTV
-  - RULE-SET,Abema TV,GlobalTV
-  - RULE-SET,Amazon,GlobalTV
-  - RULE-SET,Apple News,GlobalTV
-  - RULE-SET,Apple TV,GlobalTV
-  - RULE-SET,Bahamut,GlobalTV
-  - RULE-SET,BBC iPlayer,GlobalTV
-  - RULE-SET,DAZN,GlobalTV
-  - RULE-SET,Discovery Plus,GlobalTV
-  - RULE-SET,encoreTVB,GlobalTV
-  - RULE-SET,Fox Now,GlobalTV
-  - RULE-SET,Fox+,GlobalTV
-  - RULE-SET,HBO,GlobalTV
-  - RULE-SET,Hulu Japan,GlobalTV
-  - RULE-SET,Hulu,GlobalTV
-  - RULE-SET,Japonx,GlobalTV
-  - RULE-SET,JOOX,GlobalTV
-  - RULE-SET,KKBOX,GlobalTV
-  - RULE-SET,KKTV,GlobalTV
-  - RULE-SET,Line TV,GlobalTV
-  - RULE-SET,myTV SUPER,GlobalTV
-  - RULE-SET,Pandora,GlobalTV
-  - RULE-SET,PBS,GlobalTV
-  - RULE-SET,Pornhub,GlobalTV
-  - RULE-SET,Soundcloud,GlobalTV
-  - RULE-SET,ViuTV,GlobalTV
-  - RULE-SET,Telegram,Telegram
-  - RULE-SET,Steam,Steam
-  - RULE-SET,Speedtest,Speedtest
-  - RULE-SET,PayPal,PayPal
-  - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,PROXY,Proxy
-  - RULE-SET,Apple,Apple
-  - RULE-SET,Scholar,Scholar
-  - RULE-SET,Domestic,Domestic
-  - RULE-SET,Domestic IPs,Domestic
-  - RULE-SET,LAN,DIRECT
-  - GEOIP,CN,Domestic
-  - MATCH,Others
 rule-providers:
   allow:
     type: http
@@ -466,3 +414,58 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/LAN.yaml
     path: "./Rules/LAN"
     interval: 86400
+rules:
+  - RULE-SET,nott,REJECT
+  - RULE-SET,allow,DIRECT
+  - RULE-SET,Reject,AdBlock
+  - RULE-SET,Special,DIRECT
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Disney Plus,Disney
+  - RULE-SET,Bilibili,AsianTV
+  - RULE-SET,iQiyi,AsianTV
+  - RULE-SET,Letv,AsianTV
+  - RULE-SET,Netease Music,AsianTV
+  - RULE-SET,Tencent Video,AsianTV
+  - RULE-SET,Youku,AsianTV
+  - RULE-SET,WeTV,AsianTV
+  - RULE-SET,ABC,GlobalTV
+  - RULE-SET,Abema TV,GlobalTV
+  - RULE-SET,Amazon,GlobalTV
+  - RULE-SET,Apple News,GlobalTV
+  - RULE-SET,Apple TV,GlobalTV
+  - RULE-SET,Bahamut,GlobalTV
+  - RULE-SET,BBC iPlayer,GlobalTV
+  - RULE-SET,DAZN,GlobalTV
+  - RULE-SET,Discovery Plus,GlobalTV
+  - RULE-SET,encoreTVB,GlobalTV
+  - RULE-SET,Fox Now,GlobalTV
+  - RULE-SET,Fox+,GlobalTV
+  - RULE-SET,HBO,GlobalTV
+  - RULE-SET,Hulu Japan,GlobalTV
+  - RULE-SET,Hulu,GlobalTV
+  - RULE-SET,Japonx,GlobalTV
+  - RULE-SET,JOOX,GlobalTV
+  - RULE-SET,KKBOX,GlobalTV
+  - RULE-SET,KKTV,GlobalTV
+  - RULE-SET,Line TV,GlobalTV
+  - RULE-SET,myTV SUPER,GlobalTV
+  - RULE-SET,Pandora,GlobalTV
+  - RULE-SET,PBS,GlobalTV
+  - RULE-SET,Pornhub,GlobalTV
+  - RULE-SET,Soundcloud,GlobalTV
+  - RULE-SET,ViuTV,GlobalTV
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Steam,Steam
+  - RULE-SET,Speedtest,Speedtest
+  - RULE-SET,PayPal,PayPal
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,PROXY,Proxy
+  - RULE-SET,Apple,Apple
+  - RULE-SET,Scholar,Scholar
+  - RULE-SET,Domestic,Domestic
+  - RULE-SET,Domestic IPs,Domestic
+  - RULE-SET,LAN,DIRECT
+  - GEOIP,CN,Domestic
+  - MATCH,Others
