@@ -99,136 +99,60 @@ proxy-groups:
       - DIRECT
       - Pr
 rules:
-- RULE-SET,nott,REJECT
-- RULE-SET,allow,DIRECT
-- RULE-SET,Reject,AdBlock
-- RULE-SET,Special,DIRECT
-- RULE-SET,Netflix,Netflix
-- RULE-SET,Spotify,Spotify
-- RULE-SET,YouTube,YouTube
-- RULE-SET,Disney Plus,Disney
-- RULE-SET,Bilibili,AsianTV
-- RULE-SET,iQiyi,AsianTV
-- RULE-SET,Letv,AsianTV
-- RULE-SET,Netease Music,AsianTV
-- RULE-SET,Tencent Video,AsianTV
-- RULE-SET,Youku,AsianTV
-- RULE-SET,WeTV,AsianTV
-- RULE-SET,ABC,GlobalTV
-- RULE-SET,Abema TV,GlobalTV
-- RULE-SET,Amazon,GlobalTV
-- RULE-SET,Apple News,GlobalTV
-- RULE-SET,Apple TV,GlobalTV
-- RULE-SET,Bahamut,GlobalTV
-- RULE-SET,BBC iPlayer,GlobalTV
-- RULE-SET,DAZN,GlobalTV
-- RULE-SET,Discovery Plus,GlobalTV
-- RULE-SET,encoreTVB,GlobalTV
-- RULE-SET,Fox Now,GlobalTV
-- RULE-SET,Fox+,GlobalTV
-- RULE-SET,HBO,GlobalTV
-- RULE-SET,Hulu Japan,GlobalTV
-- RULE-SET,Hulu,GlobalTV
-- RULE-SET,Japonx,GlobalTV
-- RULE-SET,JOOX,GlobalTV
-- RULE-SET,KKBOX,GlobalTV
-- RULE-SET,KKTV,GlobalTV
-- RULE-SET,Line TV,GlobalTV
-- RULE-SET,myTV SUPER,GlobalTV
-- RULE-SET,Pandora,GlobalTV
-- RULE-SET,PBS,GlobalTV
-- RULE-SET,Pornhub,GlobalTV
-- RULE-SET,Soundcloud,GlobalTV
-- RULE-SET,ViuTV,GlobalTV
-- RULE-SET,Telegram,Telegram
-- RULE-SET,Steam,Steam
-- RULE-SET,Speedtest,Speedtest
-- RULE-SET,PayPal,PayPal
-- RULE-SET,Microsoft,Microsoft
-- RULE-SET,PROXY,Proxy
-- RULE-SET,Apple,Apple
-- RULE-SET,Scholar,Scholar
-- RULE-SET,Domestic,Domestic
-- RULE-SET,Domestic IPs,Domestic
-- RULE-SET,LAN,DIRECT
-- GEOIP,CN,Domestic
-- MATCH,Others
-script:
-  code: |
-    def main(ctx, metadata):
-        ruleset_action = {"Reject": "AdBlock",
-            "Special": "DIRECT",
-            "Netflix": "Netflix",
-            "Spotify": "Spotify",
-            "YouTube": "YouTube",
-            "Disney Plus": "Disney",
-            "Bilibili": "AsianTV",
-            "iQiyi": "AsianTV",
-            "Letv": "AsianTV",
-            "Netease Music": "AsianTV",
-            "Tencent Video": "AsianTV",
-            "Youku": "AsianTV",
-            "WeTV": "AsianTV",
-            "ABC": "GlobalTV",
-            "Abema TV": "GlobalTV",
-            "Amazon": "GlobalTV",
-            "Apple News": "GlobalTV",
-            "Apple TV": "GlobalTV",
-            "Bahamut": "GlobalTV",
-            "BBC iPlayer": "GlobalTV",
-            "DAZN": "GlobalTV",
-            "Discovery Plus": "GlobalTV",
-            "encoreTVB": "GlobalTV",
-            "Fox Now": "GlobalTV",
-            "Fox+": "GlobalTV",
-            "HBO": "GlobalTV",
-            "Hulu Japan": "GlobalTV",
-            "Hulu": "GlobalTV",
-            "Japonx": "GlobalTV",
-            "JOOX": "GlobalTV",
-            "KKBOX": "GlobalTV",
-            "KKTV": "GlobalTV",
-            "Line TV": "GlobalTV",
-            "myTV SUPER": "GlobalTV",
-            "Pandora": "GlobalTV",
-            "PBS": "GlobalTV",
-            "Pornhub": "GlobalTV",
-            "Soundcloud": "GlobalTV",
-            "ViuTV": "GlobalTV",
-            "Telegram": "Telegram",
-            "Steam": "Steam",
-            "Speedtest": "Speedtest",
-            "PayPal": "PayPal",
-            "Microsoft": "Microsoft",
-            "PROXY": "Proxy",
-            "Apple": "Apple",
-            "Scholar": "Scholar",
-            "Domestic": "Domestic",
-            "Domestic IPs": "Domestic",
-            "LAN": "DIRECT"
-          }
-        port = int(metadata["dst_port"])
-        if metadata["network"] == "UDP":
-            if port == 443:
-                ctx.log('[info] matched QUIC traffic use reject')
-                return "REJECT"
-        port_list = [21, 22, 23, 53, 80, 123, 143, 194, 443, 465, 587, 853, 993, 995, 998, 2052, 2053, 2082, 2083, 2086, 2095, 2096, 5222, 5228, 5229, 5230, 8080, 8443, 8880, 8888, 8889]
-        if port not in port_list:
-            ctx.log('[info] not common port use direct')
-            return "DIRECT"
-        if metadata["dst_ip"] == "":
-            metadata["dst_ip"] = ctx.resolve_ip(metadata["host"])
-        for ruleset in ruleset_action:
-            if ctx.rule_providers[ruleset].match(metadata):
-                return ruleset_action[ruleset]
-        if metadata["dst_ip"] == "":
-            return "DIRECT"
-        code = ctx.geoip(metadata["dst_ip"])
-        if code == "CN":
-            ctx.log('[info] Geoip CN')
-            return "Domestic"
-        ctx.log('[info] FINAL')
-        return "Others"
+  - RULE-SET,nott,REJECT
+  - RULE-SET,allow,DIRECT
+  - RULE-SET,Reject,AdBlock
+  - RULE-SET,Special,DIRECT
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Disney Plus,Disney
+  - RULE-SET,Bilibili,AsianTV
+  - RULE-SET,iQiyi,AsianTV
+  - RULE-SET,Letv,AsianTV
+  - RULE-SET,Netease Music,AsianTV
+  - RULE-SET,Tencent Video,AsianTV
+  - RULE-SET,Youku,AsianTV
+  - RULE-SET,WeTV,AsianTV
+  - RULE-SET,ABC,GlobalTV
+  - RULE-SET,Abema TV,GlobalTV
+  - RULE-SET,Amazon,GlobalTV
+  - RULE-SET,Apple News,GlobalTV
+  - RULE-SET,Apple TV,GlobalTV
+  - RULE-SET,Bahamut,GlobalTV
+  - RULE-SET,BBC iPlayer,GlobalTV
+  - RULE-SET,DAZN,GlobalTV
+  - RULE-SET,Discovery Plus,GlobalTV
+  - RULE-SET,encoreTVB,GlobalTV
+  - RULE-SET,Fox Now,GlobalTV
+  - RULE-SET,Fox+,GlobalTV
+  - RULE-SET,HBO,GlobalTV
+  - RULE-SET,Hulu Japan,GlobalTV
+  - RULE-SET,Hulu,GlobalTV
+  - RULE-SET,Japonx,GlobalTV
+  - RULE-SET,JOOX,GlobalTV
+  - RULE-SET,KKBOX,GlobalTV
+  - RULE-SET,KKTV,GlobalTV
+  - RULE-SET,Line TV,GlobalTV
+  - RULE-SET,myTV SUPER,GlobalTV
+  - RULE-SET,Pandora,GlobalTV
+  - RULE-SET,PBS,GlobalTV
+  - RULE-SET,Pornhub,GlobalTV
+  - RULE-SET,Soundcloud,GlobalTV
+  - RULE-SET,ViuTV,GlobalTV
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Steam,Steam
+  - RULE-SET,Speedtest,Speedtest
+  - RULE-SET,PayPal,PayPal
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,PROXY,Proxy
+  - RULE-SET,Apple,Apple
+  - RULE-SET,Scholar,Scholar
+  - RULE-SET,Domestic,Domestic
+  - RULE-SET,Domestic IPs,Domestic
+  - RULE-SET,LAN,DIRECT
+  - GEOIP,CN,Domestic
+  - MATCH,Others
 rule-providers:
   allow:
     type: http
