@@ -10,7 +10,7 @@ proxies:
     server: 192.168.1.221
     port: 9050
 proxy-groups:
-  - name: Proxies
+  - name: Pr
     type: select
     proxies:
       - socks
@@ -18,77 +18,77 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - Proxies
+      - Pr
   - name: Microsoft
     type: select
     proxies:
       - DIRECT
-      - Proxies
+      - Pr
   - name: Speedtest
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: Steam
     type: select
     proxies:
       - DIRECT
-      - Proxies
+      - Pr
   - name: Telegram
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: AsianTV
     type: select
     proxies:
       - DIRECT
-      - Proxies
+      - Pr
   - name: Disney
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: YouTube
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: Spotify
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: Netflix
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: GlobalTV
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: PayPal
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: Proxy
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: Scholar
     type: select
     proxies:
-      - Proxies
+      - Pr
       - DIRECT
   - name: Domestic
     type: select
     proxies:
       - DIRECT
-      - Proxies
+      - Pr
   - name: AdBlock
     type: select
     proxies:
@@ -97,9 +97,9 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - Proxies
+      - Pr
 rules:
-- RULE-SET,not,REJECT
+- RULE-SET,nott,REJECT
 - RULE-SET,allow,DIRECT
 - RULE-SET,Reject,AdBlock
 - RULE-SET,Special,DIRECT
@@ -210,11 +210,11 @@ script:
         port = int(metadata["dst_port"])
         if metadata["network"] == "UDP":
             if port == 443:
-                ctx.log('[Script] matched QUIC traffic use reject')
+                ctx.log('[info] matched QUIC traffic use reject')
                 return "REJECT"
         port_list = [21, 22, 23, 53, 80, 123, 143, 194, 443, 465, 587, 853, 993, 995, 998, 2052, 2053, 2082, 2083, 2086, 2095, 2096, 5222, 5228, 5229, 5230, 8080, 8443, 8880, 8888, 8889]
         if port not in port_list:
-            ctx.log('[Script] not common port use direct')
+            ctx.log('[info] not common port use direct')
             return "DIRECT"
         if metadata["dst_ip"] == "":
             metadata["dst_ip"] = ctx.resolve_ip(metadata["host"])
@@ -225,9 +225,9 @@ script:
             return "DIRECT"
         code = ctx.geoip(metadata["dst_ip"])
         if code == "CN":
-            ctx.log('[Script] Geoip CN')
+            ctx.log('[info] Geoip CN')
             return "Domestic"
-        ctx.log('[Script] FINAL')
+        ctx.log('[info] FINAL')
         return "Others"
 rule-providers:
   allow:
@@ -236,11 +236,11 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/wzwcc/wc@master/allow.yml
     path: "./Rules/allow"
     interval: 86400
-  not:
+  nott:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/wzwcc/wc@master/not.yml
-    path: "./Rules/not"
+    path: "./Rules/nott"
     interval: 86400
   Reject:
     type: http
