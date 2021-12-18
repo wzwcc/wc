@@ -12,8 +12,8 @@ import time
 
 from telethon import TelegramClient, events, sync
 
-api_id_list = list(os.environ.get("api_id_list"))  # 输入api_id，一个账号一项
-api_hash_list = list(os.environ.get("api_hash_list"))  # 输入api_hash，一个账号一项
+api_id_list = os.environ.get("api_id_list").split(',')  # 输入api_id，一个账号一项
+api_hash_list = os.environ.get("api_hash_list").split(',')  # 输入api_hash，一个账号一项
 
 # 东东工厂
 jdfactory = os.environ.get("jdfactory")
