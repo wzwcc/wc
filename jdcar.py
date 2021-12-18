@@ -2,6 +2,10 @@
 """
 pip3 install telethon pysocks httpx
 """
+"""
+cron: 30 8 * * *
+new Env('上车');
+"""
 
 import os
 import time
