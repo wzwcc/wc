@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-10-01 0:28
 # @Author  : 178
+"""
+cron: 30 12 * * *
+new Env('风纪委员案件');
+"""
 
 import asyncio, json, os, sys, random, logging, aiohttp, traceback
 from collections import OrderedDict
