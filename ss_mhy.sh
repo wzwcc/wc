@@ -32,5 +32,5 @@ cd "${claimer_path}"
 echo "安装依赖" &&  pip install -r requirements.txt
 cd "genshincheckinhelper"
 echo -e "${TITLE}"
-result_log_text=$(python main.py)
+result_log_text=$(python3 main.py)
 echo -e "${result_log_text}"
