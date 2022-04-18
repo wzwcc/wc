@@ -9,7 +9,7 @@ new Env('🔮米游社签到');
 VERSION="1.1.1"
 TITLE="🔮米游社签到  v${VERSION}"
 log_text=""
-BRANCH="master"
+BRANCH="main"
 MCR_PATH="${PWD}"
 
 claimer_path="${MCR_PATH}/genshin-checkin-helper"
