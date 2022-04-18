@@ -14,9 +14,10 @@ TITLE="🔮Epicgames v${VERSION}"
 log_text=""
 PUSH_TMP_PATH="./.ss-epic.tmp"
 BRANCH="master"
+MCR_PATH="${PWD}"
 
-claimer_path="${SCR_PATH}/epicgames-freebies-claimer"
-[ ! -d "${claimer_path}" ] && cd "${SCR_PATH}" && git clone https://github.com/Revadike/epicgames-freebies-claimer && cd "${claimer_path}" && npm install
+claimer_path="${MCR_PATH}/epicgames-freebies-claimer"
+[ ! -d "${claimer_path}" ] && cd "${MCR_PATH}" && git clone https://github.com/Revadike/epicgames-freebies-claimer && cd "${claimer_path}" && npm install
 
 if [ -n "$(ls -A "${claimer_path}")" ]; then
     cd "${claimer_path}" || exit 1
