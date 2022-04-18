@@ -3,7 +3,7 @@
 pip3 install telethon pysocks httpx
 """
 """
-cron: 30 8 * * *
+cron: 5 0 * * 1
 new Env('上车');
 """
 
@@ -31,6 +31,8 @@ jdcash = os.environ.get("jdcash")
 jdsgmh = os.environ.get("jdsgmh")
 # 东东健康
 jdhealth = os.environ.get("jdhealth")
+# 城城
+carnivalcity = os.environ.get("carnivalcity")
 
 
 for num in range(len(api_id_list)):
@@ -40,28 +42,31 @@ for num in range(len(api_id_list)):
     # 第一项是机器人ID，第二项是发送的文字
     # 种豆得豆
     if jdplantbean is not None:
-        client.send_message("@BotFather", "/bean " + jdplantbean)
+        client.send_message("@JDShareCodebot", "/bean " + jdplantbean)
     # 东东农场
     if jdfruit is not None:
-        client.send_message("@passerbybbot", "/jd_fruit " + jdfruit)
+        client.send_message("@JDShareCodebot", "/farm " + jdfruit)
     # 京喜工厂
     if jxfactory is not None:
-        client.send_message("@passerbybbot", "/jx_factory " + jxfactory)
+        client.send_message("@JDShareCodebot", "/jxfactory " + jxfactory)
     # 闪购盲盒
     if jdsgmh is not None:
-        client.send_message("@BotFather", "/sgmh " + jdsgmh)
+        client.send_message("@JDShareCodebot", "/sgmh " + jdsgmh)
     # 东东工厂
     if jdfactory is not None:
-        client.send_message("@BotFather", "/ddfactory " + jdfactory)
+        client.send_message("@JDShareCodebot", "/ddfactory " + jdfactory)
     # 东东萌宠
     if jdpet is not None:
-        client.send_message("@BotFather", "/pet " + jdpet)
+        client.send_message("@JDShareCodebot", "/pet " + jdpet)
     # 东东健康
     if jdhealth is not None:
-        client.send_message("@BotFather", "/health " + jdhealth)
+        client.send_message("@JDShareCodebot", "/health " + jdhealth)
+    # 城城
+    if carnivalcity is not None:
+        client.send_message("@JDShareCodebot", "/carnivalcity " + carnivalcity)
 
     time.sleep(5)  # 延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
-    client.send_read_acknowledge("@BotFather")  # 将机器人回应设为已读
+    client.send_read_acknowledge("@JDShareCodebot")  # 将机器人回应设为已读
     print("Done! Session name:", session_name[num])
 
 os._exit(0)
