@@ -26,10 +26,11 @@ else
     echo "${claimer_path} 为空，可能为 Git 仓库拉取失败，请检查" && exit 1
 fi
 
-[ ! -f "${claimer_path}/config/config.json" ] && echo "没有检测到 ${claimer_path}/config/config.json 文件，请配置" && exit 1
+[ ! -f "${claimer_path}/genshincheckinhelper/config/config.json" ] && echo "没有检测到 ${claimer_path}/genshincheckinhelper/config/config.json 文件，请配置" && exit 1
 
 cd "${claimer_path}"
 echo "安装依赖" &&  pip install -r requirements.txt
+cd "genshincheckinhelper"
 echo -e "${TITLE}"
 result_log_text=$(python main.py)
 echo -e "${result_log_text}"
