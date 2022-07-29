@@ -42,31 +42,31 @@ for num in range(len(api_id_list)):
     # 第一项是机器人ID，第二项是发送的文字
     # 种豆得豆
     if jdplantbean is not None:
-        client.send_message("@JDShareCodebot", "/bean " + jdplantbean)
+        client.send_message("@chriszhuli_bot", "/bean " + jdplantbean)
     # 东东农场
     if jdfruit is not None:
-        client.send_message("@JDShareCodebot", "/farm " + jdfruit)
+        client.send_message("@chriszhuli_bot", "/farm " + jdfruit)
     # 京喜工厂
     if jxfactory is not None:
-        client.send_message("@JDShareCodebot", "/jxfactory " + jxfactory)
+        client.send_message("@chriszhuli_bot", "/jxfactory " + jxfactory)
     # 闪购盲盒
     if jdsgmh is not None:
-        client.send_message("@JDShareCodebot", "/sgmh " + jdsgmh)
+        client.send_message("@chriszhuli_bot", "/sgmh " + jdsgmh)
     # 东东工厂
     if jdfactory is not None:
-        client.send_message("@JDShareCodebot", "/ddfactory " + jdfactory)
+        client.send_message("@chriszhuli_bot", "/ddfactory " + jdfactory)
     # 东东萌宠
     if jdpet is not None:
-        client.send_message("@JDShareCodebot", "/pet " + jdpet)
+        client.send_message("@chriszhuli_bot", "/pet " + jdpet)
     # 东东健康
     if jdhealth is not None:
-        client.send_message("@JDShareCodebot", "/health " + jdhealth)
+        client.send_message("@chriszhuli_bot", "/health " + jdhealth)
     # 城城
     if carnivalcity is not None:
-        client.send_message("@JDShareCodebot", "/carnivalcity " + carnivalcity)
+        client.send_message("@chriszhuli_bot", "/carnivalcity " + carnivalcity)
 
     time.sleep(5)  # 延时5秒，等待机器人回应（一般是秒回应，但也有发生阻塞的可能）
-    client.send_read_acknowledge("@JDShareCodebot")  # 将机器人回应设为已读
+    client.send_read_acknowledge("@chriszhuli_bot")  # 将机器人回应设为已读
     print("Done! Session name:", session_name[num])
 
 os._exit(0)
