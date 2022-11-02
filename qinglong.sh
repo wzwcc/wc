@@ -2,6 +2,7 @@
 # alpine linux
 # 2022年11月2日
 # 更新
+$dir=pwd
 apk update
 apk upgrade
 # 安装并运行redis
@@ -22,6 +23,7 @@ cd /usr/share/fonts/
 wget https://github.com/adobe-fonts/source-han-sans/raw/release/Variable/TTF/Subset/SourceHanSansCN-VF.ttf
 
 mkfontscale && mkfontdir
+cd $dir
 git clone --depth=1 -b main https://github.com/Le-niao/Yunzai-Bot.git
 cd Yunzai-Bot
 pnpm install -P
