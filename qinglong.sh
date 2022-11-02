@@ -20,7 +20,7 @@ apk add mkfontscale
 mkdir /usr/share/fonts/
 cd /usr/share/fonts/
 
-wget https://github.com/adobe-fonts/source-han-sans/raw/release/Variable/TTF/Subset/SourceHanSansCN-VF.ttf
+wget https://github.com/adobe-fonts/source-han-sans/raw/release/Variable/TTF/Subset/SourceHanSansCN-VF.ttf –no-check-certificate
 
 mkfontscale && mkfontdir
 cd $dir
