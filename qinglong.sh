@@ -2,7 +2,7 @@
 # alpine linux
 # 2022年11月2日
 # 更新
-$dir=pwd
+dir=$(cd $(dirname $0) && pwd )
 apk update
 apk upgrade
 # 安装并运行redis
