@@ -22,9 +22,9 @@ jobs:
           v2=$(grep -i txt one)
           var=$(cat two)
           echo ${var}
-          mv ${var} 666.txt
-          mv ${v2} v2.txt
-          mv ${var} proxies.txt
+          cp ${var} 666.txt
+          cp ${v2} v2.txt
+          cp ${var} proxies.txt
           sed -i '/proxies:/, $!d' proxies.txt
           sed -i '/proxy-groups/, $d' proxies.txt
           mv proxies.txt ../
