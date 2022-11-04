@@ -24,6 +24,10 @@ jobs:
           echo ${var}
           mv ${var} 666.txt
           mv ${v2} v2.txt
+          mv ${var} proxies.txt
+          sed -i '/proxies:/, $!d' proxies.txt
+          sed -i '/proxy-groups/, $d' proxies.txt
+          mv proxies.txt ../
           mv v2.txt ../
           mv 666.txt ../
           cd ../
