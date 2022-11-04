@@ -1,0 +1,26 @@
+version: "3.6"
+services:
+  qinglong:
+    container_name: qinglong
+    hostname: qinglong
+    image: whyour/qinglong:latest
+    logging:
+      driver: json-file
+      options:
+        max-file: 5
+        max-size: 10m
+    networks:
+      - ql_default
+    ports:
+      - 22102:22102/udp
+      - 443:443/tcp
+      - 0.0.0.0:5700:5700/tcp
+      - 0.0.0.0:8080:8080/tcp
+    restart: unless-stopped
+    volumes:
+      - /mnt/sdb/opt/ql/data:/ql/data
+    working_dir: /ql
+networks:
+  ql_default:
+    external: true
+    name: ql_default
